@@ -6,9 +6,8 @@ const initialState = {
 };
 
 export function city(state = initialState, action = null) {
-  console.log(action);
   let index;
-
+  console.log(action);
   switch (action.type) {
     case types.ADD_CITY:
       return { cities: [...state.cities, action.res] };
@@ -26,8 +25,8 @@ export function city(state = initialState, action = null) {
                         ...state.cities.slice(index + 1)]
       };
     case types.ADD_CITY_COORDS:
-      index = _.findIndex(state.cities, {id: action.res.id});
-      if(index === -1){
+      index = _.findIndex(state.cities, { id: action.res.id });
+      if (index === -1) {
         return { cities: [action.res] };
       }
       return state;

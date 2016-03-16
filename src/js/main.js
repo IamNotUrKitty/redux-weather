@@ -15,9 +15,9 @@ require('../css/styl.styl');
 
 class APP extends Component {
   render() {
-    return <Provider store={store}>
+    return (<Provider store={store}>
       <Container />
-    </Provider>
+    </Provider>);
   }
 }
 
