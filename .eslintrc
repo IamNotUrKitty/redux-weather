@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb/base",
+  "extends": ["airbnb/base", "plugin:react/recommended"],
   "env": {
     "mocha": true,
     "node": true
@@ -7,6 +7,9 @@
   "globals": {
     "expect": true
   },
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "space-in-parens": 0,
     "padded-blocks": 0,
